@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #header {
+            background-color: rgb(243, 243, 243);
+            width: 100%;
+            height: 43px;
+        }
+
+        body {
+            background-color: #ededed;
+        }
+
+        .logo {
+
+            width: 148px;
+            margin-left: 20px;
+        }
+
+        #btn {
+            background-color: black;
+            color: white;
+            float: right;
+            margin-top: 5px;
+            margin-right: 22px;
+            font-size: 15px;
+            border-radius: 20px;
+            padding: 6px;
+
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #tab-container {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        th,
+        tr,
+        td {
+            border: 1px solid gray;
+            text-align: center;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        th {
+            padding: 10px;
+        }
+
+        .tab-con {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img class="logo" src="logo.png" alt="Logo">
+
+        <Button id="btn" onclick="changeColor()"> Dark mode</Button>
+    </div>
+    <br>
+    <p>Time table-Muhammad Umair Ahmad's Skils Development Progam-Faisalabad</p><br>
+    <table id="tab-container">
+        <tr>
+            <th> </th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+
+        <tr>
+            <th>CCNA (Cisco Certified Netword Associate)</th>
+            <td>06:00pm to 08:00pm</td>
+            <td>06:00pm to 08:00pm</td>
+            <td>06:00pm to 08:00pm</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>Graphic Designing</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>02:00 PM to 04:00 PM</td>
+            <td>02:00 PM to 04:00 PM</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th>IT Essentials</th>
+            <td>03:00pm to 05:00pm</td>
+            <td>03:00pm to 05:00pm</td>
+            <td>03:00pm to 05:00pm</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td><b>(Section A) </b><br> 09:00 AM to 11:00AM</td>
+            <td><b>(Section A) </b><br> 09:00 AM to 11:00AM</td>
+
+        </tr>
+
+        <tr>
+            <th>Web and Mob Application development</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>(Section D)</b><br> 6:00 PM to 08:00 PM</td>
+            <td><b>(Section D)</b><br> 06:00 PM to 08:00 PM</td>
+            <td><b>(Section B)</b><br> 11:00 AM to 01:00 PM</td>
+            <td><b>(Section B)</b><br> 11:00 AM to 01:00 PM</td>
+
+        </tr>
+
+        <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b></td>
+            <td><b>(Section C)</b><br> 06:08 PM to 06:08 PM</td>
+            <td><b>(Section C)</b><br> 06:08 PM to 06:08 PM</td>
+
+        </tr>
+
+        <tr>
+            <th>Video editing</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>04:00 PM to 06:00 PM</td>
+            <td>04:00 PM to 06:00 PM</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+
+    </table>
+    <script>
+        function changeColor(backgroundColor, textColor, borderColor) {
+            // change body background color
+            document.body.style.backgroundColor = "rgb(53,53,53)";
+            // Change text color
+            document.body.style.color = "white";
+
+            // change tabe border color
+            cons.tableDataCells = document.querySelectorAll('td');
+            for (const cell of tableDataCells) {
+                cell.style.borderColor = '1px solid rgb(255, 255, 255)';
+
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
